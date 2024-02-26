@@ -5,7 +5,7 @@ Mini-casino dApp (decentralized application) | (basic shell games, GUI soon) | B
     - 100% customizable and you can create your own
     - Stored in `games` directory 
     - Must include ```from basic_casino import *``` to access Casino Basic functions
-    - Everything inside a function called `main()` | `def main():` 
+    - Every minigame mechanism inside a function called `main()` | `def main():` 
 
 <br/>
 
