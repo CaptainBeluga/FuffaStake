@@ -22,7 +22,7 @@ def main():
 
     finish = False
 
-
+    bet = on_started()
 
     def ask_packet(msg):
         
@@ -55,9 +55,6 @@ def main():
                 else:
                     print("\nPACKAGE NUMBER NOT CORRET !")
 
-
-    bet = on_started()
-
     for x in range(len(bets)-1):
         choice = secrets.choice(bets)
 
@@ -65,6 +62,10 @@ def main():
         bets.remove(choice)
 
     player = bets[0]
+    print(player)
+    
+    print(packets)
+    time.sleep(1.5)
 
     while len(packets) != 0:
         if count_bet == min_bet and len(packets) != 1:
@@ -131,3 +132,8 @@ def main():
 
     if finish:
         print(f"YOU WON {player}X !")
+        send(bet*player,bankAddress,playerAddress,bankPrivateKey)
+
+
+    else:
+        send(bet*0.5,bankAddress,playerAddress,bankPrivateKey)
