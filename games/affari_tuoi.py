@@ -62,10 +62,6 @@ def main():
         bets.remove(choice)
 
     player = bets[0]
-    print(player)
-    
-    print(packets)
-    time.sleep(1.5)
 
     while len(packets) != 0:
         if count_bet == min_bet and len(packets) != 1:
