@@ -11,17 +11,17 @@ Mini-casino dApp (decentralized application) | (basic shell games, GUI soon) | B
 
 - **Critical Information are stored in `.env`**:
     - BANK_ADDRESS (Main Bank ETH Address)
-    - BANK_PRIVATE_KEY (sign transaction from `BANK` to `PLAYER`) | (e.g. when the player win the bet)
+    - BANK_PRIVATE_KEY (sign transaction from `BANK` to `PLAYER`) | (e.g. when the player wins the bet)
  
     - PLAYER_ADDRESS (Player ETH Address)
-    - PLAYER_PRIVATE_KEY (sign transaction from `PLAYER` to `BANK`) | (e.g. when the player bet)  
+    - PLAYER_PRIVATE_KEY (sign transaction from `PLAYER` to `BANK`) | (e.g. when the player bets)  
 
 <br/>
 
 - **Recommended Requirements**:
     - *INFURA API KEY* => https://www.infura.io/ (MUST REGISTER)
         - In `basic-casino.py` change `API_URL` = `https://goerli.infura.io/v3/<API_KEY>`.<br/>
-          ⚠️ I used `Goerli` Network for Test purposes but you can choose whatever network you want ⚠️
+          ⚠️ I used `Goerli` Network for Test purposes but you can choose whatever network you like ⚠️
   
   <br/>
   
